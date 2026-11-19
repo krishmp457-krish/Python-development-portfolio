@@ -33,3 +33,14 @@ Developed an initial understanding of the project requirements and prepared the 
 
 ### Status
 In Progress
+
+## Day 2 – Networking Implementation
+
+- Implemented TCP socket communication.
+- Created a TCP server.
+- Created a TCP client.
+- Established localhost connection.
+- Implemented message sending and receiving.
+- Tested client-server communication.
+
+Status: Completed
