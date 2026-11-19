@@ -1,0 +1,14 @@
+
+import socket
+
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+client.connect(("127.0.0.1", 5000))
+
+client.sendall("Hello MeshWeaver Server!".encode())
+
+response = client.recv(1024).decode()
+
+print("Server response:", response)
+
+client.close()
