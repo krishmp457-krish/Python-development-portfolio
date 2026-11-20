@@ -44,3 +44,25 @@ In Progress
 - Tested client-server communication.
 
 Status: Completed
+
+## Day 3 – Asynchronous Networking
+
+### Tasks Completed
+- Implemented asynchronous TCP server using asyncio.
+- Implemented asynchronous client communication.
+- Used asyncio.start_server() for server creation.
+- Used asyncio.open_connection() for client connections.
+- Used asyncio.gather() to handle multiple client operations concurrently.
+- Tested communication between three clients and one server.
+
+### Files Created
+- networking/async_server.py
+- networking/async_client.py
+
+### Outcome
+Successfully implemented asynchronous
+communication for the MeshWeaver project.
+
+### Next Step
+Implement Python function serialization
+using cloudpickle.
