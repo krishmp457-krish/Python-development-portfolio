@@ -66,3 +66,34 @@ communication for the MeshWeaver project.
 ### Next Step
 Implement Python function serialization
 using cloudpickle.
+
+
+## Day 4 – Cloudpickle and Task Serialization
+
+### Tasks Completed
+- Installed cloudpickle.
+- Implemented task serialization.
+- Implemented task deserialization.
+- Created an asynchronous task server.
+- Created an asynchronous task client.
+- Transferred Python functions over TCP.
+- Executed received functions remotely.
+- Returned execution results to the sender.
+
+### Files Created
+- tasks/serializer.py
+- networking/task_server.py
+- networking/task_client.py
+
+### Testing
+- Tested remote addition function.
+- Tested remote multiplication function.
+- Verified successful result transfer.
+
+### Outcome
+Successfully implemented basic remote Python
+function execution using cloudpickle and asyncio.
+
+### Next Step
+Implement peer identification and peer discovery.
+
