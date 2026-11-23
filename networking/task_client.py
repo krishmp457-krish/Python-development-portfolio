@@ -64,7 +64,7 @@ async def send_task(func, *args, **kwargs):
 
 
 async def main():
-    await send_task(multiply, 10, 20)
+    await send_task(multiply, 20, 20)
 
 
 if __name__ == "__main__":
