@@ -97,3 +97,46 @@ function execution using cloudpickle and asyncio.
 ### Next Step
 Implement peer identification and peer discovery.
 
+
+## Day 5 – Remote Task Execution and Integration
+
+### Tasks Completed
+- Integrated remote task execution components.
+- Tested asynchronous task communication.
+- Implemented unique task identification using UUID.
+- Created TaskManager class.
+- Added task status tracking.
+- Tested remote multiplication function.
+
+### Files Created
+- tasks/task_manager.py
+
+### Outcome
+Implemented initial task tracking and verified
+remote Python function execution.
+
+---
+
+## Day 6 – Node Identification and Peer Discovery
+
+### Tasks Completed
+- Implemented unique node identification.
+- Created PeerDiscovery class.
+- Implemented peer registration.
+- Added peer information storage.
+- Implemented peer listing.
+- Implemented peer removal.
+- Tested local peer registry with multiple nodes.
+
+### Files Created
+- discovery/peer_discovery.py
+- discovery/__init__.py
+
+### Outcome
+Implemented the initial peer management
+foundation for MeshWeaver.
+
+### Next Step
+Implement automatic peer discovery and
+Kademlia-based distributed lookup.
+
