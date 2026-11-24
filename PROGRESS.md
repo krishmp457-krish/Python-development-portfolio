@@ -140,3 +140,25 @@ foundation for MeshWeaver.
 Implement automatic peer discovery and
 Kademlia-based distributed lookup.
 
+
+## Day 7 – Kademlia DHT Fundamentals
+
+### Tasks Completed
+- Studied the fundamentals of Kademlia DHT.
+- Implemented unique 160-bit node ID generation.
+- Implemented XOR distance calculation.
+- Developed closest peer selection.
+- Tested node ID generation and distance calculation.
+
+### Files Created
+- discovery/kademlia_utils.py
+
+### Outcome
+Implemented the basic mathematical
+foundation required for Kademlia-based
+peer discovery.
+
+### Next Step
+Develop routing tables and peer lookup.
+
+
