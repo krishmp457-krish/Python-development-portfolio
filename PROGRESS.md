@@ -159,6 +159,6 @@ foundation required for Kademlia-based
 peer discovery.
 
 ### Next Step
-Develop routing tables and peer lookup.
+Implement system resource monitoring using Python's psutil library to track CPU and RAM usage of MeshWeaver nodes.
 
 
