@@ -161,4 +161,22 @@ peer discovery.
 ### Next Step
 Implement system resource monitoring using Python's psutil library to track CPU and RAM usage of MeshWeaver nodes.
 
+## Day 8 – System Resource Monitoring
 
+### Tasks Completed
+- Explored system resource monitoring using Python.
+- Installed and utilized the psutil library.
+- Implemented CPU usage monitoring.
+- Implemented RAM usage monitoring.
+- Retrieved total, used, and available memory information.
+- Developed functions to collect system resource information.
+- Tested the resource monitoring module.
+
+### Files Created
+- monitoring/resource_monitor.py
+
+### Outcome
+Implemented a basic system resource monitoring module capable of collecting CPU and RAM usage information for MeshWeaver nodes.
+
+### Next Step
+Implement Kademlia routing tables, K-buckets, and peer lookup functionality.
