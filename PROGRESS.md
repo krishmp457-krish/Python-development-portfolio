@@ -180,3 +180,23 @@ Implemented a basic system resource monitoring module capable of collecting CPU 
 
 ### Next Step
 Implement Kademlia routing tables, K-buckets, and peer lookup functionality.
+
+## Day 9 – Kademlia Routing and Peer Lookup
+
+### Tasks Completed
+- Studied Kademlia routing table architecture.
+- Implemented K-bucket data structures.
+- Developed peer addition and removal functionality.
+- Implemented XOR-based bucket selection.
+- Developed closest peer lookup functionality.
+- Tested routing table operations with multiple peer IDs.
+
+### Files Created
+- discovery/routing_table.py
+- discovery/test_routing.py
+
+### Outcome
+Implemented a basic Kademlia routing table that organizes known peers into K-buckets and identifies the closest peers using XOR distance.
+
+### Next Step
+Implement the Gossip protocol for sharing system resource information between MeshWeaver nodes.
