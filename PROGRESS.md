@@ -200,3 +200,23 @@ Implemented a basic Kademlia routing table that organizes known peers into K-buc
 
 ### Next Step
 Implement the Gossip protocol for sharing system resource information between MeshWeaver nodes.
+
+## Day 10 – Gossip Protocol and Resource Sharing
+
+### Tasks Completed
+- Studied the fundamentals of the Gossip protocol.
+- Implemented a GossipManager class.
+- Developed gossip message creation functionality.
+- Implemented resource information sharing between nodes.
+- Added peer resource information storage.
+- Implemented message reception and processing.
+- Tested bidirectional resource information exchange between simulated nodes.
+
+### Files Created
+- monitoring/gossip.py
+
+### Outcome
+Implemented the basic Gossip protocol logic to exchange and maintain CPU and RAM resource information between simulated MeshWeaver nodes.
+
+### Next Step
+Integrate networking, peer discovery, Kademlia routing, resource monitoring, and Gossip functionality into the complete MeshWeaver system.
