@@ -220,3 +220,28 @@ Implemented the basic Gossip protocol logic to exchange and maintain CPU and RAM
 
 ### Next Step
 Integrate networking, peer discovery, Kademlia routing, resource monitoring, and Gossip functionality into the complete MeshWeaver system.
+
+### Day 11 – Node Integration and TCP Networking
+
+**Work Completed:**
+- Integrated Peer Discovery into the central Node class.
+- Connected the Kademlia Routing Table with the Node.
+- Integrated Kademlia utility functions for node ID generation and closest-peer selection.
+- Connected TCP Server and Client modules.
+- Successfully tested server-client communication.
+- Verified complete Node initialization through `main.py`.
+
+**Testing Results:**
+- Node initialized successfully.
+- Peer Discovery initialized.
+- Routing Table initialized.
+- TCP Server started successfully.
+- TCP Client connected successfully.
+- Successful message exchange between server and client.
+
+**Pending Work:**
+- Integrate live peer connections with Peer Discovery.
+- Automatically register connected peers in the Routing Table.
+- Test Kademlia routing with multiple peers.
+
+**Status:** Node integration and basic TCP communication successful.
