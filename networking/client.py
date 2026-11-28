@@ -1,14 +1,33 @@
 
 import socket
 
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-client.connect(("127.0.0.1", 5000))
+def start_client():
 
-client.sendall("Hello MeshWeaver Server!".encode())
+    client = socket.socket(
+        socket.AF_INET,
+        socket.SOCK_STREAM
+    )
 
-response = client.recv(1024).decode()
+    try:
+        client.connect(("127.0.0.1", 5000))
 
-print("Server response:", response)
+        print("Connected to MeshWeaver Server!")
 
-client.close()
+        client.sendall(
+            "Hello MeshWeaver Server!".encode()
+        )
+
+        response = client.recv(1024).decode()
+
+        print("Server response:", response)
+
+    except ConnectionRefusedError:
+        print("Server is not running!")
+
+    finally:
+        client.close()
+
+
+if __name__ == "__main__":
+    start_client()

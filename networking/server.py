@@ -1,22 +1,47 @@
 
 import socket
+import socket
+import threading
 
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+SERVER_READY = threading.Event()
 
-server.bind(("127.0.0.1", 5000))
-server.listen(1)
+def start_server():
 
-print("MeshWeaver Server Started")
-print("Waiting for client...")
+    server = socket.socket(
+        socket.AF_INET,
+        socket.SOCK_STREAM
+    )
 
-client, address = server.accept()
+    server.setsockopt(
+        socket.SOL_SOCKET,
+        socket.SO_REUSEADDR,
+        1
+    )
 
-print("Client connected:", address)
+    try:
+        server.bind(("127.0.0.1", 5000))
+        server.listen(1)
+        SERVER_READY.set()
 
-message = client.recv(1024).decode()
-print("Received:", message)
+        print("MeshWeaver Server Started")
+        print("Waiting for client...")
 
-client.sendall("Hello from MeshWeaver!".encode())
+        client, address = server.accept()
 
-client.close()
-server.close()
+        print("Client connected:", address)
+
+        message = client.recv(1024).decode()
+        print("Received:", message)
+
+        client.sendall(
+            "Hello from MeshWeaver!".encode()
+        )
+
+        client.close()
+
+    finally:
+        server.close()
+
+
+if __name__ == "__main__":
+    start_server()
